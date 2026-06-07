@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#ffe4ec,#ffd6e8);
+    color:#444;
+    overflow-x:hidden;
+}
+
+section{
+    min-height:100vh;
+    padding:80px 10%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+h1{
+    color:#ff4f81;
+    margin-bottom:20px;
+    font-size:3rem;
+}
+
+h2{
+    color:#ff4f81;
+    margin-bottom:20px;
+    font-size:2.2rem;
+}
+
+p{
+    max-width:900px;
+    line-height:1.8;
+    font-size:1.1rem;
+}
+
+.hero{
+    background:rgba(255,255,255,0.5);
+    backdrop-filter:blur(10px);
+}
+
+.gallery{
+    display:grid;
+    grid-template-columns:repeat(5, 1fr);
+    grid-template-rows:repeat(4, auto);
+    gap:20px;
+    width:100%;
+    max-width:1400px;
+    margin-top:30px;
+}
+
+.gallery img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 8px 15px rgba(0,0,0,.15);
+    transition:transform .3s ease;
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+.card{
+    max-width:800px;
+    margin:auto;
+    padding:35px;
+    background:#fff9fb;
+    border-radius:20px;
+    box-shadow:0 8px 25px rgba(0,0,0,.1);
+    font-family:'Georgia',serif;
+}
+
+.card p{
+    margin-bottom:18px;
+    text-align:justify;
+    color:#555;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#ff4f81;
+    color:white;
+}
+
+.heart{
+    position:fixed;
+    bottom:-20px;
+    color:#ff4f81;
+    animation:float 8s linear infinite;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0) rotate(0deg);
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-100vh) rotate(360deg);
+        opacity:0;
+    }
+}
+
+button{
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:30px;
+    cursor:pointer;
+    font-size:1rem;
+    margin-top:20px;
+    transition:all .3s ease;
+}
+
+button:hover{
+    background:#ff2f6d;
+    transform:translateY(-2px);
+}
